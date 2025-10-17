@@ -1,51 +1,56 @@
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-    background-color: #000000;
-    margin: 0;
-    color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;   /* Stack header above scoring */
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #000;
+  margin: 0;
+  color: white;
+  height: 100vh;
+  width: 100vw;
+}
+
+#header {
+  width: 100%;
+  text-align: center;       /* Center “Arena 2” horizontally */
+  margin-top: 2vh;
+}
+
+#header h1 {
+  font-size: 8vw;
+  margin: 0;
 }
 
 #scoring-system {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 3vh;          /* spacing below the header */
 }
 
 .corner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
 }
 
-h1 {
-    font-size: 8vw;
-    margin: 0;
-    padding: 0;
+h2 {
+  font-size: 6vw;
+  margin: 0;
 }
 
 .score {
-    font-size: 25vw;
-    margin: 20px 0;
-    padding: 20px;
-    border-radius: 10px;
-    width: 100%;
-    text-align: center;
+  font-size: 25vw;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  text-align: center;
 }
 
-#red-score {
-    background-color: red;
-    color: white;
-}
-
-#blue-score {
-    background-color: blue;
-    color: white;
-}
+#red-score { background-color: red; color: white; }
+#blue-score { background-color: blue; color: white; }

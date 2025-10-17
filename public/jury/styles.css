@@ -1,15 +1,25 @@
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-    background-color: #000000;
-    margin: 0;
-    color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;   /* Stack header above scoring */
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #000;
+  margin: 0;
+  color: white;
+  height: 100vh;
+  width: 100vw;
 }
 
+#header {
+  width: 100%;
+  text-align: center; 
+  margin-top: 2vh;
+}
+#header h1 {
+  font-size: 8vw;
+  margin: 0;
+}
 #scoring-system {
     display: flex;
     justify-content: space-around;
